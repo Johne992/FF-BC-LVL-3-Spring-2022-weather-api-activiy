@@ -5,7 +5,7 @@
 
 //section 2 - Justin
 function theWeather(){
-  fetch("https://api.openweathermap.org/data/2.5/weather?q=lagos&appid=e020912d9981563e01ad44d9d285749f")
+  fetch("https://api.openweathermap.org/data/2.5/weather?lat=21.3131&lon=158.0090&appid=e020912d9981563e01ad44d9d285749f")
     .then(response => response.json( ))
     .then(json => console.log(response.json( )))
     .catch(err => console.error(err))
