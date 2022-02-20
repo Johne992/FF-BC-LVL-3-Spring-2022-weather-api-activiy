@@ -1,4 +1,4 @@
-//our weather api key : e020912d9981563e01ad44d9d285749f
+//our weather api key : 
 // link to get current weather:  https://openweathermap.org/current
 //Global Variables here
 
@@ -14,10 +14,10 @@ function checkStatus(response){
 //section 1 - Jaya
 let x = document.getElementById('jsect').addEventListener('onclick', blue);
 
-let blue = fetch("https://api.openweathermap.org/data/2.5/weather?lat=21.3131&lon=158.0090&appid=e020912d9981563e01ad44d9d285749f" , {})
+let blue = fetch("https://api.openweathermap.org/data/2.5/weather?lat=21.3131&lon=158.0090&appid=__" , {})
 .then(response => {
 	console.log(response);
-})
+}
 .catch(err => {
 	console.error(err);
 });
@@ -25,7 +25,7 @@ let blue = fetch("https://api.openweathermap.org/data/2.5/weather?lat=21.3131&lo
 
 //section 2 - Justin
 function theWeather(){
-  fetch("https://api.openweathermap.org/data/2.5/weather?lat=21&lon=158&appid=e020912d9981563e01ad44d9d285749f")
+  fetch("https://api.openweathermap.org/data/2.5/weather?lat=21&lon=158&appid=___")
     .then(checkStatus)
     //.then(function(response){return response.json();})
     .then(response => response.json())
